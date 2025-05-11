@@ -116,3 +116,16 @@ This repository contains well-structured, beginner-friendly examples and explana
 - Creating and Managing Log Files
 
 ---
+
+## To Compile and Run
+
+- javac FileName.java
+- java FileName
+
+
+---
+📌 Happy Coding! 🚀
+
+Copyright (c) 2025 The App Wizard
+
+
