@@ -5,11 +5,6 @@ This repository contains well-structured, beginner-friendly examples and explana
 
 ## 📘 Module 1: Introduction to Java
 
-- History and Evolution of Java  
-- Java Features (Platform Independence, OOP, Security, etc.)  
-- JVM Architecture  
-- JDK, JRE, and JVM Differences  
-- Setting up Java Development Environment  
 - Writing and Running Your First Java Program (Hello World)
 
 ---
