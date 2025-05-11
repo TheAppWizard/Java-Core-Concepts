@@ -1,0 +1,34 @@
+1. Stack Memory
+Purpose: The stack is used for static memory allocation. It stores local variables, function parameters, and return addresses.
+Structure: It works on the Last In, First Out (LIFO) principle. Think of it like a stack of plates: the last plate added is the first one to be removed.
+Size: The stack has a limited size, which can cause a stack overflow if too much data is pushed onto it (e.g., due to deep recursion).
+Allocation/Deallocation: Memory allocation and deallocation are automatic. When a function is called, its local variables are pushed onto the stack, and when the function returns, they are popped off.
+Scope: Variables stored in the stack have local scope—they only exist while the function that created them is executing.
+Speed: Access to stack memory is very fast because it operates in a simple manner (push and pop).
+Example:
+Local variables inside a function.
+Function parameters.
+Example in C++:
+
+void example() {
+    int x = 5;  // x is stored in the stack.
+} // x is removed from the stack when the function exits.
+
+
+
+2. Heap Memory
+Purpose: The heap is used for dynamic memory allocation. It is used when the amount of memory required is not known at compile time and needs to be allocated and freed during runtime.
+Structure: The heap has a more complex structure, and memory is managed dynamically. It is essentially a pool of memory that can be used by the program as needed.
+Size: The heap is much larger than the stack and is only limited by the system's memory.
+Allocation/Deallocation: Memory must be manually allocated and deallocated (e.g., using malloc()/free() in C or new/delete in C++).
+Scope: Variables stored in the heap have global scope (they exist as long as they are explicitly freed).
+Speed: Access to heap memory is slower compared to stack memory because it requires more complex memory management (allocation/deallocation) and might involve fragmentation.
+Example:
+Dynamically allocated memory, such as arrays and objects created at runtime.
+Example in C++:
+
+void example() {
+    int* ptr = new int;  // Memory for the integer is allocated from the heap.
+    *ptr = 5;
+    delete ptr;  // Memory is freed when it's no longer needed.
+}
